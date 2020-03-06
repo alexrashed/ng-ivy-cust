@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "types": [],
+    "paths": {
+      "@internal/my-app/*": [
+        "projects/my-custom-app/src/app/*",
+        "projects/my-app/src/app/*"
+      ]
+    }
+  },
+  "files": [
+    "../my-app/src/main.ts",
+    "../my-app/src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts",
+    "../my-app/src/**/*.d.ts"
+  ]
+  // TODO the compilation works when removing the "files" and "include" section above
+  // and include all ts sources as below instead:
+  //"include": [
+  //  "**/*.ts",
+  //  "../my-app/src/**/*.ts"
+  //]
+}
