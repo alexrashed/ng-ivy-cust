@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start-custom": "ng serve --project my-custom-app",
     "build": "ng build",
+    "build-custom": "ng build --project my-custom-app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
