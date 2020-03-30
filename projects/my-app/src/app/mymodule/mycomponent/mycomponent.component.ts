@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component,  OnInit} from '@angular/core';
 import {MycomponentDirective} from '@internal/my-app/mymodule/mycomponent/mycomponent.directive';
 
 @Component({

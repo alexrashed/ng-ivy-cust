@@ -1,4 +1,4 @@
-import {Component, Directive, OnInit} from '@angular/core';
+import {Directive, OnInit} from '@angular/core';
 
 @Directive()
 export class MycomponentDirective implements OnInit {
