@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MycomponentDirective} from '@internal/my-app/mymodule/mycomponent/mycomponent.directive';
+import {MycomponentComponentLogic} from '@internal/my-app/mymodule/mycomponent/mycomponent.component.logic';
 
 @Component({
   selector: 'app-mycomponent',
@@ -8,17 +8,13 @@ import {MycomponentDirective} from '@internal/my-app/mymodule/mycomponent/mycomp
       mycomponent3 extends mycomponent
     </p>
 
-    {{this.testString}}
+    {{this.injectedDirective.testString}}
   `,
   styles: []
 })
-export class MycomponentComponent extends MycomponentDirective implements OnInit {
-
-  constructor() {
-    super();
-    this.testString += ' And has been extended by its extending class.';
-  }
+export class MycomponentComponent extends MycomponentComponentLogic implements OnInit {
 
   ngOnInit(): void {
+    this.injectedDirective.testString += ' And has been extended by its extending class.';
   }
 }
