@@ -9,6 +9,9 @@ import {MycomponentComponentLogic} from '@internal/my-app/mymodule/mycomponent/m
     </p>
 
     {{this.injectedDirective.testString}}
+    <child-directive id="2"></child-directive><p>
+    This name has been given as an input to the parent: {{this.name}}<p>
+    <div>ClickMe</div>
   `,
   styles: []
 })

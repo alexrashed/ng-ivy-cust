@@ -6,7 +6,8 @@ import {MycomponentComponentLogic} from '@internal/my-app/mymodule/mycomponent/m
   template: `
     mycomponent non-overwritten<p>
     <app-mycomponent2></app-mycomponent2>
-     {{this.injectedDirective.testString}}
+    {{this.injectedDirective.testString}}
+    <child-directive id="1"></child-directive>
   `,
   styles: []
 })
